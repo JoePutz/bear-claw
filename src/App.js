@@ -1,10 +1,19 @@
 // import logo from './logo.svg';
 import './App.css';
 import EditUserPage from './components/EditUserPage.js'
+import EditUserPageTwo from './components/EditUserPageTwo';
 
 function App() {
   return (
-    <EditUserPage/>
+    <>
+    <EditUserPageTwo />
+    </>
+    
+
+
+    // <EditUserPage/>
+
+
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
