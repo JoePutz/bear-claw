@@ -1,92 +1,11 @@
 .App {
-  text-align: center;
+  text-align: left;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
- /* The switch - the box around the slider */
- .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* background-color: #ccc; */
-  background-color: rgb(158, 158, 158);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  /* background-color: white; */
-  background-color: rgb(15, 168, 15);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-/* input:checked + .slider {
-  background-color: #2196F3;
-} */
-
-/* input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-} */
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -94,17 +13,13 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+#dark .slider {
+  background-color: lightgray;
+  border-radius: 10px;
+  color: green;
 }
 
-.slider.round:before {
-  border-radius: 50%;
-} 
-
 img {
-  /* overflow: hidden; */
   width: 100px;
   height: 100px;
   clip-path: circle(50%);
@@ -120,11 +35,15 @@ form {
 
 input[type=submit] {
   padding:5px 15px; 
-  background:lightseagreen;
+  background:lightgray;
   border:0 none;
   cursor:pointer;
   -webkit-border-radius: 5px;
   border-radius: 5px; 
+}
+
+#dark input[type=submit] {
+  background: lightseagreen;
 }
 
 input[type=text] {
@@ -152,4 +71,13 @@ select {
 
 .hoverHand {
   cursor: pointer;
+}
+
+#light {
+  background-color: white;
+}
+
+#dark {
+  background-color: darkblue;
+  color:rgb(15, 168, 15)
 }

@@ -1,3 +1,16 @@
+# Bear Claw Edit Page
+> A form to allow users of Bear Claws' Talent Engagement System to update their profiles
+
+## Useage
+
+This is a simple React application, and should be opened with 
+```sh
+npm start
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
