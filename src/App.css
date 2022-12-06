@@ -81,3 +81,11 @@ select {
   background-color: darkblue;
   color:rgb(15, 168, 15)
 }
+
+#dark .fluid ui button {
+  background-color: blue;
+}
+
+.fluid + .ui + .button {
+  background-color: white
+}
